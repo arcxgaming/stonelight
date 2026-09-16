@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stonelight — Support</title>
+<meta name="description" content="Support for Stonelight, the atmospheric stacking game by ArcX Gaming.">
+<style>
+  :root { --ink: #0b0f14; --paper: #f3efe6; --stone: #6b6257; --gold: #c9a24a; --line: #d9d2c3; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 Georgia, "Iowan Old Style", "Times New Roman", serif; }
+  header { background: var(--ink); color: #e8e2d4; padding: 56px 20px 44px; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+  header .wrap { padding: 0; }
+  h1 { font-size: 2.4rem; letter-spacing: 0.02em; margin: 0 0 6px; font-weight: 400; }
+  .studio { font: 600 0.78rem/1 system-ui, -apple-system, sans-serif; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin: 0 0 18px; }
+  .lede { font-size: 1.1rem; color: #cfc7b6; margin: 0; max-width: 46ch; }
+  main { padding: 36px 0 64px; }
+  h2 { font-size: 1.15rem; font-weight: 600; margin: 34px 0 8px; font-family: system-ui, -apple-system, sans-serif; letter-spacing: 0.01em; }
+  p { margin: 0 0 14px; }
+  a { color: #2a5b7a; }
+  dl { margin: 0; }
+  dt { font-weight: 600; font-family: system-ui, -apple-system, sans-serif; font-size: 0.95rem; margin-top: 14px; }
+  dd { margin: 4px 0 0; }
+  nav a { margin-right: 18px; font-family: system-ui, -apple-system, sans-serif; font-size: 0.9rem; }
+  footer { border-top: 1px solid var(--line); padding: 22px 0 40px; color: var(--stone); font-size: 0.85rem; font-family: system-ui, -apple-system, sans-serif; }
+  .fallback { color: var(--stone); font-size: 0.92rem; }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <p class="studio">ArcX Gaming</p>
+  <h1>Stonelight</h1>
+  <p class="lede">A quiet stacking game. Set stone on stone, carry the light through four realms, and climb out.</p>
+</div></header>
+<main class="wrap">
+  <nav><a href="#help">Help</a><a href="#purchases">Purchases</a><a href="#contact">Contact</a><a href="privacy.html">Privacy policy</a></nav>
+
+  <h2 id="help">Help</h2>
+  <dl>
+    <dt>How do I play?</dt>
+    <dd>A slab glides over the tower. Tap to set it down. Whatever hangs over the edge is lost, so each slab you place is at most as wide as the one beneath. Reach the level's height to carry the light on. Land a slab exactly and the tower is restored to its full width.</dd>
+    <dt>What are the different stones?</dt>
+    <dd>Warning stones show their danger before they arrive: a slab that crumbles once it is set, or one that runs with a current, wants a quicker hand. The realm's opening levels introduce each one before it counts against you.</dd>
+    <dt>I lost my progress.</dt>
+    <dd>Progress is saved on your device after every level and whenever the game goes to the background. Deleting the app deletes the save; there is no account to restore it from. Continue from the title screen picks up the last tower you left standing.</dd>
+    <dt>The game feels too hard or too easy.</dt>
+    <dd>Each realm's opening levels are gentler than its later ones, and the trial levels between them are deliberately short. If a level feels wrong rather than hard, tell us which one; every level is tuned by hand.</dd>
+    <dt>Reduced motion, sound and haptics</dt>
+    <dd>Settings (from the title screen or the pause menu) has switches for Mute all, Haptics and Reduced motion, which steadies the camera and shortens the effects.</dd>
+  </dl>
+
+  <h2 id="purchases">Purchases</h2>
+  <p>Stonelight is free to play through the whole of the first realm and into the second. The full climb — every realm to the top — is a single one-time purchase made through the App Store. There are no subscriptions, no consumables and no advertising.</p>
+  <p><strong>Restoring a purchase.</strong> If you reinstall the game or move to a new iPhone signed in with the same Apple Account, open Settings inside the game and tap Restore Purchases. Restores go through Apple; nothing about you is sent to us.</p>
+  <p><strong>Refunds</strong> are handled by Apple. Visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in, and choose the purchase.</p>
+
+  <h2 id="contact">Contact</h2>
+  <p>Email <a data-mail="Stonelight" href="#contact">the studio</a>. Tell us the iPhone model, the iOS version and, for a gameplay problem, the level number; it makes the difference between a guess and a fix. We read everything and reply to what needs a reply, usually within a few days.</p>
+  <noscript><p class="fallback">With scripts turned off the address cannot be shown as a link. Write to <strong>support&#8203;.arcxgaming</strong> at <strong>gmail</strong>, dot com.</p></noscript>
+</main>
+<script>
+// The support address is assembled at run time rather than written into the
+// page, so an address harvester reading this HTML finds nothing to lift.
+// Browsers, people and App Review all see the real thing.
+(function () {
+  var flip = function (s) { return s.split("").reverse().join(""); };
+  var address = flip("gnimagxcra.troppus") + "@" + flip("moc.liamg");
+  var links = document.querySelectorAll("a[data-mail]");
+  for (var i = 0; i < links.length; i++) {
+    var subject = links[i].getAttribute("data-mail");
+    links[i].href = "mailto:" + address + (subject ? "?subject=" + encodeURIComponent(subject) : "");
+    links[i].textContent = address;
+  }
+})();
+</script>
+<footer class="wrap">© 2026 ArcX Gaming. Stonelight is made in Melbourne. <a href="privacy.html">Privacy policy</a></footer>
+</body>
+</html>

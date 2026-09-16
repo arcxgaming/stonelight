@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stonelight — Privacy Policy</title>
+<meta name="description" content="Privacy policy for Stonelight by ArcX Gaming.">
+<style>
+  :root { --ink: #0b0f14; --paper: #f3efe6; --stone: #6b6257; --gold: #c9a24a; --line: #d9d2c3; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 Georgia, "Iowan Old Style", "Times New Roman", serif; }
+  header { background: var(--ink); color: #e8e2d4; padding: 56px 20px 44px; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+  header .wrap { padding: 0; }
+  h1 { font-size: 2rem; letter-spacing: 0.02em; margin: 0 0 6px; font-weight: 400; }
+  .studio { font: 600 0.78rem/1 system-ui, -apple-system, sans-serif; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin: 0 0 18px; }
+  .lede { font-size: 1.05rem; color: #cfc7b6; margin: 0; max-width: 50ch; }
+  main { padding: 36px 0 64px; }
+  h2 { font-size: 1.15rem; font-weight: 600; margin: 34px 0 8px; font-family: system-ui, -apple-system, sans-serif; }
+  p { margin: 0 0 14px; }
+  a { color: #2a5b7a; }
+  footer { border-top: 1px solid var(--line); padding: 22px 0 40px; color: var(--stone); font-size: 0.85rem; font-family: system-ui, -apple-system, sans-serif; }
+  .fallback { color: var(--stone); font-size: 0.92rem; }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <p class="studio">ArcX Gaming</p>
+  <h1>Stonelight privacy policy</h1>
+  <p class="lede">Stonelight does not collect, store or share personal information. This page says what that means in practice.</p>
+</div></header>
+<main class="wrap">
+  <p><em>Effective 15 September 2026. Applies to Stonelight for iOS, published by ArcX Gaming.</em></p>
+
+  <h2>What the game does not do</h2>
+  <p>Stonelight has no accounts and no sign-in. It contains no advertising and no advertising identifiers. It does not use analytics or crash-reporting services, does not track you across apps or websites, does not ask for your location, contacts, photos, camera or microphone, and does not talk to any server of ours. There is no server of ours.</p>
+
+  <h2>What stays on your device</h2>
+  <p>Your progress — the level you are on, the towers you have finished, your best heights and your settings — is stored only on your iPhone, in the app's own storage. It is included in your device backups if you have them turned on, and it is deleted when you delete the app. We never see it.</p>
+  <p>The game has an optional on-screen performance readout in Settings. It is drawn live and is not recorded or sent anywhere.</p>
+
+  <h2>Purchases</h2>
+  <p>The full climb is sold as a one-time in-app purchase through Apple's App Store. Apple processes the payment and holds the receipt; the game only asks Apple whether the purchase has been made. We do not receive your name, payment details or Apple Account information. Apple's handling of that data is described in <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
+
+  <h2>Children</h2>
+  <p>Stonelight is suitable for all ages and collects no information from anyone, including children.</p>
+
+  <h2>Changes</h2>
+  <p>If a future version of Stonelight ever collects any data — for instance an opt-in crash report — this policy will say so before that version ships, and the date at the top will change.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a data-mail="Stonelight privacy" href="#">the studio</a>.</p>
+  <noscript><p class="fallback">With scripts turned off the address cannot be shown as a link. Write to <strong>support&#8203;.arcxgaming</strong> at <strong>gmail</strong>, dot com.</p></noscript>
+</main>
+<script>
+// The support address is assembled at run time rather than written into the
+// page, so an address harvester reading this HTML finds nothing to lift.
+// Browsers, people and App Review all see the real thing.
+(function () {
+  var flip = function (s) { return s.split("").reverse().join(""); };
+  var address = flip("gnimagxcra.troppus") + "@" + flip("moc.liamg");
+  var links = document.querySelectorAll("a[data-mail]");
+  for (var i = 0; i < links.length; i++) {
+    var subject = links[i].getAttribute("data-mail");
+    links[i].href = "mailto:" + address + (subject ? "?subject=" + encodeURIComponent(subject) : "");
+    links[i].textContent = address;
+  }
+})();
+</script>
+<footer class="wrap">© 2026 ArcX Gaming. <a href="index.html">Support</a></footer>
+</body>
+</html>
