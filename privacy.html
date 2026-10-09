@@ -20,7 +20,6 @@
   p { margin: 0 0 14px; }
   a { color: #2a5b7a; }
   footer { border-top: 1px solid var(--line); padding: 22px 0 40px; color: var(--stone); font-size: 0.85rem; font-family: system-ui, -apple-system, sans-serif; }
-  .fallback { color: var(--stone); font-size: 0.92rem; }
 </style>
 </head>
 <body>
@@ -39,7 +38,7 @@
   <p>Your progress — the level you are on, the towers you have finished, your best heights and your settings — is stored only on your iPhone, in the app's own storage. It is included in your device backups if you have them turned on, and it is deleted when you delete the app. We never see it.</p>
 
   <h2>Purchases</h2>
-  <p>The full climb is sold as a one-time in-app purchase through Apple's App Store. Apple processes the payment and holds the receipt; the game only asks Apple whether the purchase has been made. We do not receive your name, payment details or Apple Account information. Apple's handling of that data is described in <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
+  <p>The Full Climb is sold as an in-app purchase through Apple's App Store. Apple processes the payment and holds the receipt; the game only asks Apple whether the purchase has been made. We do not receive your name, payment details or Apple Account information. Apple's handling of that data is described in <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
 
   <h2>Children</h2>
   <p>Stonelight is suitable for all ages and collects no information from anyone, including children.</p>
@@ -48,24 +47,8 @@
   <p>If a future version of Stonelight ever collects any data — for instance an opt-in crash report — this policy will say so before that version ships, and the date at the top will change.</p>
 
   <h2>Contact</h2>
-  <p>Questions about this policy: <a data-mail="Stonelight privacy" href="#">the studio</a>.</p>
-  <noscript><p class="fallback">With scripts turned off the address cannot be shown as a link. Write to <strong>support&#8203;.arcxgaming</strong> at <strong>gmail</strong>, dot com.</p></noscript>
+  <p>Questions about this policy: <a href="mailto:support.arcxgaming@gmail.com?subject=Stonelight%20privacy">support.arcxgaming@gmail.com</a>.</p>
 </main>
-<script>
-// The support address is assembled at run time rather than written into the
-// page, so an address harvester reading this HTML finds nothing to lift.
-// Browsers, people and App Review all see the real thing.
-(function () {
-  var flip = function (s) { return s.split("").reverse().join(""); };
-  var address = flip("gnimagxcra.troppus") + "@" + flip("moc.liamg");
-  var links = document.querySelectorAll("a[data-mail]");
-  for (var i = 0; i < links.length; i++) {
-    var subject = links[i].getAttribute("data-mail");
-    links[i].href = "mailto:" + address + (subject ? "?subject=" + encodeURIComponent(subject) : "");
-    links[i].textContent = address;
-  }
-})();
-</script>
 <footer class="wrap">© 2026 ArcX Gaming. <a href="index.html">Support</a></footer>
 </body>
 </html>

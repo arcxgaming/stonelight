@@ -24,7 +24,6 @@
   dd { margin: 4px 0 0; }
   nav a { margin-right: 18px; font-family: system-ui, -apple-system, sans-serif; font-size: 0.9rem; }
   footer { border-top: 1px solid var(--line); padding: 22px 0 40px; color: var(--stone); font-size: 0.85rem; font-family: system-ui, -apple-system, sans-serif; }
-  .fallback { color: var(--stone); font-size: 0.92rem; }
 </style>
 </head>
 <body>
@@ -39,41 +38,25 @@
   <h2 id="help">Help</h2>
   <dl>
     <dt>How do I play?</dt>
-    <dd>A slab glides over the tower. Tap to set it down. Whatever hangs over the edge is lost, so each slab you place is at most as wide as the one beneath. Reach the level's height to carry the light on. Land a slab exactly and it keeps its full width; land two in a row exactly and lost stone starts to return, so a narrowing tower can be won back.</dd>
+    <dd>A slab glides over the tower. Tap to set it down. Whatever hangs over the edge is lost, so each slab you place is at most as wide as the one beneath. Reach the level's height to carry the light on. Land a slab exactly and it keeps its full width; land two in a row exactly and lost stone starts to return, so a narrowing tower can be won back. The first levels help you find the timing: as the slab nears the centre it slows, and a glow marks the moment to tap. The help fades as you climb.</dd>
     <dt>What are the different stones?</dt>
     <dd>Red stones must be let past — touch one and the tower falls. In the Drowned Light a stone cracked with light runs with a current, and the stones that follow it cross faster. In the Ashen Slopes a stone left crossing too long crumbles, and the climb ends with it. Each realm's opening levels introduce its stones before they count against you.</dd>
     <dt>I lost my progress.</dt>
-    <dd>Progress is saved on your device after every level and whenever the game goes to the background. Deleting the app deletes the save; there is no account to restore it from. Continue from the title screen picks up the last tower you left standing.</dd>
+    <dd>Each level's result is saved on your device when the level ends. If you leave the app mid-level, the game pauses and keeps your tower; even if the app has closed by the time you come back, CONTINUE THE CLIMB picks the level up again. RESET PROGRESS in Settings on the title screen starts the climb over and keeps your purchase. Deleting the app deletes the save; there is no account to restore it from.</dd>
     <dt>The game feels too hard or too easy.</dt>
-    <dd>Each realm's opening levels are gentler than its later ones, and the trial levels between them are deliberately short. If a level feels wrong rather than hard, tell us which one; every level is tuned by hand.</dd>
+    <dd>Each realm's opening levels are gentler than its later ones. Some levels run faster than the rest; their card says GAUNTLET. If a level feels wrong rather than hard, tell us which one.</dd>
     <dt>Reduced motion, sound and haptics</dt>
     <dd>Settings (from the title screen or the pause menu) has switches for Mute all, Haptics and Reduced motion, which steadies the camera and shortens the effects.</dd>
   </dl>
 
   <h2 id="purchases">Purchases</h2>
-  <p>Stonelight is free to play through the whole of the first realm and into the second. The full climb — every realm to the top — is a single one-time purchase made through the App Store. There are no subscriptions and no advertising.</p>
+  <p>The start of the climb is free. One purchase through the App Store, The Full Climb, unlocks the rest of the game, and it stays unlocked. To get it back on another device, or after reinstalling, open Settings and tap RESTORE PURCHASES. There are no subscriptions and no advertising.</p>
   <p><strong>Restoring a purchase.</strong> If you reinstall the game or move to a new iPhone signed in with the same Apple Account, open Settings inside the game and tap Restore Purchases. Restores go through Apple; nothing about you is sent to us.</p>
   <p><strong>Refunds</strong> are handled by Apple. Visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in, and choose the purchase.</p>
 
   <h2 id="contact">Contact</h2>
-  <p>Email <a data-mail="Stonelight" href="#contact">the studio</a>. Tell us the iPhone model, the iOS version and, for a gameplay problem, the level number; it makes the difference between a guess and a fix. We read everything and reply to what needs a reply, usually within a few days.</p>
-  <noscript><p class="fallback">With scripts turned off the address cannot be shown as a link. Write to <strong>support&#8203;.arcxgaming</strong> at <strong>gmail</strong>, dot com.</p></noscript>
+  <p>Email <a href="mailto:support.arcxgaming@gmail.com?subject=Stonelight">support.arcxgaming@gmail.com</a>. Tell us the iPhone model, the iOS version and, for a gameplay problem, the level number; it makes the difference between a guess and a fix. We read everything and reply to what needs a reply, usually within a few days.</p>
 </main>
-<script>
-// The support address is assembled at run time rather than written into the
-// page, so an address harvester reading this HTML finds nothing to lift.
-// Browsers, people and App Review all see the real thing.
-(function () {
-  var flip = function (s) { return s.split("").reverse().join(""); };
-  var address = flip("gnimagxcra.troppus") + "@" + flip("moc.liamg");
-  var links = document.querySelectorAll("a[data-mail]");
-  for (var i = 0; i < links.length; i++) {
-    var subject = links[i].getAttribute("data-mail");
-    links[i].href = "mailto:" + address + (subject ? "?subject=" + encodeURIComponent(subject) : "");
-    links[i].textContent = address;
-  }
-})();
-</script>
 <footer class="wrap">© 2026 ArcX Gaming. <a href="privacy.html">Privacy policy</a></footer>
 </body>
 </html>
